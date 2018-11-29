@@ -67,7 +67,7 @@ public class SignUpLoggingActivity extends AppCompatActivity {
 
                         if (user != null && e == null) {
 
-                            FancyToast.makeText(SignUpLoggingActivity.this, user.get("username") + " is Logged In successfully", FancyToast.LENGTH_LONG, FancyToast.SUCCESS, true).show();
+                            FancyToast.makeText(SignUpLoggingActivity.this, user.get("username") + " is Logged In Successfully", FancyToast.LENGTH_LONG, FancyToast.SUCCESS, true).show();
 
                         } else {
 
