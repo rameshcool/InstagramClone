@@ -1,5 +1,6 @@
 package com.rameshcodeworks.instagramclone;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -46,6 +47,10 @@ public class SignUpLoggingActivity extends AppCompatActivity {
                         if (e == null) {
 
                             FancyToast.makeText(SignUpLoggingActivity.this, appUser.get("username") + " is signup successfully", FancyToast.LENGTH_LONG, FancyToast.SUCCESS, true).show();
+
+                            Intent intent = new Intent(SignUpLoggingActivity.this, WelcomeActivity.class);
+                            startActivity(intent);
+
                         } else {
 
                             FancyToast.makeText(SignUpLoggingActivity.this, e.getMessage(), FancyToast.LENGTH_LONG, FancyToast.ERROR, true).show();
@@ -68,6 +73,9 @@ public class SignUpLoggingActivity extends AppCompatActivity {
                         if (user != null && e == null) {
 
                             FancyToast.makeText(SignUpLoggingActivity.this, user.get("username") + " is Logged In Successfully", FancyToast.LENGTH_LONG, FancyToast.SUCCESS, true).show();
+
+                            Intent intent = new Intent(SignUpLoggingActivity.this, WelcomeActivity.class);
+                            startActivity(intent);
 
                         } else {
 
